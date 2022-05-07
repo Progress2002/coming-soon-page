@@ -1,1 +1,1 @@
-# cooming-soon-page
+# coming-soon-page
