@@ -2,8 +2,6 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    /* display: flex;
-    max-height: 97vh; */
     background-image: url(images/bg-pattern-desktop.svg);
     padding-left: 10%;
     margin: 0;
@@ -118,7 +116,7 @@ input:focus{
 @media(max-width:440px){
     body{
         padding-left: 0;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
 
     header{
