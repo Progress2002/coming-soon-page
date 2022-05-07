@@ -118,7 +118,7 @@ input:focus{
 @media(max-width:440px){
     body{
         padding-left: 0;
-        margin-bottom: 40px;
+        margin-bottom: 120px;
     }
 
     header{
