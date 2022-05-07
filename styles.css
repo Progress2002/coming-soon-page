@@ -1,0 +1,193 @@
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    /* display: flex;
+    max-height: 97vh; */
+    background-image: url(images/bg-pattern-desktop.svg);
+    padding-left: 10%;
+    margin: 0;
+}
+
+header{
+    display: inline-block;
+    margin-top: 60px;
+}
+
+/* --------FLEX CONTAINER--------  */
+
+.flex-container{
+    display: flex;
+}
+
+
+
+h1{
+    font-weight: 600 ;
+    width: 300px;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    margin-top: 120px;
+}
+
+h1 span{
+    font-weight: 300;
+    color:  hsl(0, 36%, 70%);
+}
+
+p{
+    width: 40%;
+    line-height: 1.8;
+    color: hsl(0, 36%, 70%);;
+}
+
+.form{
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid gainsboro;
+    background-color: hsl(0, 0%, 100%);
+}
+.border{
+    border: 2px solid  hsl(0, 74%, 74%);
+}
+
+
+input{
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    padding: 10px 15px;
+    width: 160px;
+    font-size: 12px;
+    border-radius: 50px;
+    border-right: none;
+    background-color: hsl(0, 0%, 100%);
+
+}
+input:focus{
+    outline: none;
+    outline-color: none;
+}
+
+
+.btn{
+    border: 0 ;
+    padding: 8px 27px;
+    border-radius: 50px;
+    background-image: linear-gradient( to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%) );
+    box-shadow: 0 5px 12px hsl(0, 9%, 64%);
+}
+
+.btn:hover{
+    background: hsl(0, 80%, 86%);
+    cursor: pointer;
+}
+
+.btn img{
+    width: 8px;
+}
+
+.erro-icon{
+    display: inline-block;
+    width: 15px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+.erro{
+    margin-top: 0;
+    padding-left: 20px;
+    color:  hsl(0, 91%, 50%);
+    font-size: 12px;
+}
+
+.photo{
+    background-image: url(images/hero-desktop.jpg);
+    width: 39%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.photo-2{
+    display: none;
+}
+
+
+@media(max-width:440px){
+    body{
+        padding-left: 0;
+    }
+
+    header{
+        display: block;
+        margin: 40px 30px 0;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-flow: column;
+    }
+
+    h1{
+        text-align: center;
+        font-weight: 600 ;
+        margin: auto;
+        margin-top: 70px;
+        font-size: 2rem;
+    }
+
+    p{
+        width: auto;
+        text-align: center;
+        padding: 0 20px;
+        line-height: 1.5;
+        color: hsl(0, 36%, 70%);;
+    }
+
+    .form{
+        margin-left: 11%;
+        margin-top: 30px;
+    }
+
+    input{
+        width: 180px;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .photo-2{
+    display: block;
+    margin-top: 30px;
+    }
+
+    .photo-2 img{
+        width: 100%;
+    }
+
+    .item-1{
+        order: 2;
+    }
+}
+
+@media(max-width:300px){
+    h1{
+        width: auto;
+    }
+
+    p{
+        line-height: 1.2;
+        padding: 0 10px;
+    }
+
+    .form{
+        margin-left: 5%;
+    }
+
+    input{
+        width: 130px;
+    }
+}
